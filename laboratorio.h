@@ -13,6 +13,9 @@ public:
     void respaldar();
     void recuperar();
 
+    void insertar(const Computadora &c, size_t pos);
+    size_t size();
+
     friend Laboratorio& operator<<(Laboratorio &L, const Computadora &c)
     {
         L.agregarFinal(c);

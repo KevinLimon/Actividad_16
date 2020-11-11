@@ -37,7 +37,20 @@ int main(){
             k.recuperar();
         }
         else if(opcion=="5"){
-            
+            Computadora c;
+            cin>>c;
+
+            size_t ps;
+            cout<<"Posicion: ";
+            cin>>ps;
+            cin.ignore();
+
+            if(ps>=k.size()){
+                cout<<"Posicion no valida"<<endl;
+            }
+            else{
+                k.insertar(c, ps);
+            }
         }
         else if(opcion=="6"){
             
