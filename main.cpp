@@ -82,8 +82,20 @@ int main(){
         else if(opcion=="9"){
             
         }
-        else if(opcion=="10"){
-            
+        else if(opcion=="10"){ //Para buscar tienen que coincidir el nombre y el color
+            Computadora c;
+            cin>>c;
+            cin.ignore();
+            Computadora *ptr = k.buscar(c);
+
+            if(ptr == nullptr){
+                cout<<"No encontrado"<<endl;
+            }
+            else{
+                cout<<*ptr<<endl;
+            }
+
+
         }
         else if(opcion=="0"){
             break;
