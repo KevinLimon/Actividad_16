@@ -80,7 +80,12 @@ int main(){
             k.ordenar();
         }
         else if(opcion=="9"){
-            
+            if(k.size()==0){
+                cout<<"Arreglo vacio"<<endl;
+            }
+            else{
+                k.eliminar_ultimo();
+            }
         }
         else if(opcion=="10"){ //Para buscar tienen que coincidir el nombre y el color
             Computadora c;

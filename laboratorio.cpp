@@ -99,6 +99,11 @@ void Laboratorio::ordenar()
     sort(computadoras.begin(), computadoras.end());
 }
 
+void Laboratorio::eliminar_ultimo()
+{
+    computadoras.pop_back();
+}
+
 Computadora* Laboratorio::buscar(const Computadora &c)
 {
     auto it = find(computadoras.begin(), computadoras.end(), c);
