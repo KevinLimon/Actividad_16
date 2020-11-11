@@ -54,6 +54,15 @@ public:
     {
         return color == c.color;
     }
+
+    bool operator<(const Computadora& c)
+    {
+        return marca < c.marca;
+    }
+    bool operator<(const Computadora& c) const
+    {
+        return marca < c.marca;
+    }
 };
 
 

@@ -77,7 +77,7 @@ int main(){
             }
         }
         else if(opcion=="8"){
-            
+            k.ordenar();
         }
         else if(opcion=="9"){
             

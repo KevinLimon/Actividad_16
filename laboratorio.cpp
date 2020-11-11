@@ -1,6 +1,6 @@
 #include "laboratorio.h"
 #include <fstream>
-
+#include<algorithm>
 Laboratorio::Laboratorio()
 {
 
@@ -92,4 +92,9 @@ void Laboratorio::inicializar(const Computadora &c, size_t n)
 void Laboratorio::eliminar(size_t pos)
 {
     computadoras.erase(computadoras.begin()+pos);
+}
+
+void Laboratorio::ordenar()
+{
+    sort(computadoras.begin(), computadoras.end());
 }
