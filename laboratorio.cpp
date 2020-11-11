@@ -83,3 +83,13 @@ size_t Laboratorio::size()
 {
     return computadoras.size();
 }
+
+void Laboratorio::inicializar(const Computadora &c, size_t n)
+{
+    //computadoras = vector<Computadora>(c, n);
+}
+
+void Laboratorio::eliminar(size_t pos)
+{
+    computadoras.erase(computadoras.begin()+pos);
+}

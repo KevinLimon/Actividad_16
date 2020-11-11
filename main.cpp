@@ -53,10 +53,28 @@ int main(){
             }
         }
         else if(opcion=="6"){
-            
+            Computadora c;
+            cin>>c;
+
+            size_t n;
+            cout<<"Veces: ";
+            cin>>n;
+            cin.ignore();
+
+            //k.inicializar(c, n);
         }
         else if(opcion=="7"){
-            
+            size_t ps;
+            cout<<"Posicion: ";
+            cin>>ps;
+            cin.ignore();
+
+            if(ps>=k.size()){
+                cout<<"Posicion no valida"<<endl;
+            }
+            else{
+                k.eliminar(ps);
+            }
         }
         else if(opcion=="8"){
             
