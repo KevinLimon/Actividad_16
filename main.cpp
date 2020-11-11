@@ -61,7 +61,7 @@ int main(){
             cin>>n;
             cin.ignore();
 
-            //k.inicializar(c, n);
+            k.inicializar(c, n);
         }
         else if(opcion=="7"){
             size_t ps;

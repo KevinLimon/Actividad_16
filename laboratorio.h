@@ -15,7 +15,7 @@ public:
 
     void insertar(const Computadora &c, size_t pos);
     size_t size();
-    void inicializar(const Computadora &c, size_t n);
+    void inicializar(const Computadora &c, size_t num);
     void eliminar(size_t pos);
     void ordenar();
     void eliminar_ultimo();

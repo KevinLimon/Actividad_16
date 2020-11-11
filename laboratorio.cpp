@@ -84,9 +84,9 @@ size_t Laboratorio::size()
     return computadoras.size();
 }
 
-void Laboratorio::inicializar(const Computadora &c, size_t n)
+void Laboratorio::inicializar(const Computadora &c, size_t num)
 {
-    //computadoras = vector<Computadora>(c, n);
+    computadoras = vector<Computadora>(num, c);
 }
 
 void Laboratorio::eliminar(size_t pos)
